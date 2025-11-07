@@ -26,13 +26,12 @@
 }
 
 body {
-  font-family: 'Psytype', sans-serif;
+  font-family: 'Psytype';
   font-size: 36px;
   color: #1C1B17;
 }
 
 .header {
-  padding: 20px 0;
   padding: 20px 0;
   position: relative;
   z-index: 2;
@@ -45,7 +44,7 @@ body {
 }
 
 .logo {
-  font-family: 'Rockwell', sans-serif;
+  font-family: 'Rockwell';
   font-size: 32px;
   font-weight: bold;
   color: #ED6D2C;
@@ -72,7 +71,6 @@ h2 {
 
 .container {
   width: 90%;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -112,9 +110,8 @@ h2 {
   text-align: left;
 }
 
-/* === ABOUT === */
 .about {
-  padding: 30px;
+  padding: 80px;
   background-color: #fff;
 }
 
@@ -122,7 +119,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 50px;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
@@ -228,7 +225,7 @@ h2 {
   display: flex;
   justify-content: flex-end;
   margin-top: -30px;
-  margin-right: 300px;
+  margin-right: 200px;
 }
 .catalog-link {
   display: inline-flex;
@@ -308,7 +305,7 @@ h2 {
 }
 
 .studio__right {
-  flex: 1 1 40%;
+  flex: 1 1 50%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -363,3 +360,4 @@ h2 {
   color: #A99F9F;
   padding-top: 15px;
 }
+

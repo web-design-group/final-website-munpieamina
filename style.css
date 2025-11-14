@@ -66,7 +66,7 @@ h2 {
   font-family: 'Widock';
   font-size: 40px;
   color: #1C1B17;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .container {
@@ -111,7 +111,6 @@ h2 {
 }
 
 .about {
-  padding: 80px;
   background-color: #fff;
 }
 
@@ -205,7 +204,7 @@ h2 {
   font-size: 24px;
 }
 .course-card__button {
-  margin-top: 10px;
+  margin-top: 5px;
   width: 271px;
   height: 76px;
   align-self: center;
@@ -225,7 +224,6 @@ h2 {
   display: flex;
   justify-content: flex-end;
   margin-top: -30px;
-  margin-right: 200px;
 }
 .catalog-link {
   display: inline-flex;
@@ -255,20 +253,18 @@ h2 {
   justify-content: space-between;
   align-items: flex-start;
   gap: 40px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+}
+
+.studio h2 {
+  margin-bottom: 20px;
 }
 
 .studio__left {
-  flex: 1 1 50%;
+  flex: 1 1 auto;
   display: flex;
   flex-direction: column;
   gap: 15px;
-}
-
-.studio__title {
-  font-family: 'Widock';
-  font-size: 40px;
-  color: #1C1B17;
 }
 
 .studio__text {
@@ -298,14 +294,14 @@ h2 {
 }
 
 .studio__photo-small img {
-  width: 791px;
-  height: 362px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   margin-top: 10px;
 }
 
 .studio__right {
-  flex: 1 1 50%;
+  flex: 1 1 auto;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -313,8 +309,16 @@ h2 {
 
 .studio__photo-large {
   width: 554px;
-  height: 755px;
+  height: auto;
   object-fit: cover;
+  margin-top: 0;
+}
+
+@media (min-width: 1000px) {
+  .studio__left,
+  .studio__right {
+    flex: 1 1 48%; /* два блока рядом, каждый занимает примерно половину */
+  }
 }
 
 
@@ -360,4 +364,3 @@ h2 {
   color: #A99F9F;
   padding-top: 15px;
 }
-

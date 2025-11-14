@@ -1,0 +1,236 @@
+@font-face {
+  font-family: 'Rockwell';
+  src: url('fonts/rockwell-gras1.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PsyType';
+  src: url('fonts/PsyType.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Widock';
+  src: url('fonts/Widock TRIAL Bold.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Psytype';
+  font-size: 36px;
+  color: #1C1B17;
+}
+
+.header__grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 20px 80px;
+}
+
+.logo {
+  font-family: 'Rockwell';
+  font-size: 32px;
+  font-weight: bold;
+  color: #ED6D2C;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #ED6D2C;
+  margin-left: 25px;
+  font-size: 36px;
+}
+
+.nav a:hover {
+  color: #E84810;
+  text-decoration: underline;
+}
+
+.kvart-title {
+  padding: 100px 80px 40px;
+  max-width: 1300px;
+}
+
+.kvart-title h1 {
+  font-family: 'Widock';
+  font-size: 77px;
+  color: #ED6D2B;
+  margin: 0;
+}
+
+.kvart-title p {
+  font-family: 'PsyType';
+  font-size: 67px;
+  color: #ED6D2B;
+  margin: 15px 0 0;
+}
+
+.tickets {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 47px; /* Расстояние между билетами */
+  padding: 40px 80px 20px; /* Отступы как у заголовка и header */
+}
+
+.ticket {
+  width: 100%; /* по ширине страницы, с учётом паддинга родителя */
+  height: auto; /* высота по макету */
+  background-image: url("img/ticket2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; /* тянет фон ровно по ширине и высоте */
+  background-position: center;
+  border-radius: 30px;
+  color: #fff;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  padding: 40px 60px;
+  box-sizing: border-box;
+}
+
+.ticket__info h2 {
+  color: #ff6a1a;
+  font-family: 'Widock';
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.ticket__info p {
+  font-size: 20px;
+  line-height: 1.4;
+  max-width: 600px;
+}
+
+.ticket__place-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* иконка | текст | кнопка */
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+/* Адрес внутри, делаем перенос строк */
+.ticket__place-text {
+  display: grid;
+  line-height: 1.2;
+}
+
+/* Иконка карты */
+.ticket__map-icon {
+  width: 58px;
+  height: 75px;
+}
+
+/* Кнопка на одном уровне с адресом */
+.ticket__btn {
+  border: none;
+  background-color: #ED6D2C;
+  color: #fff;
+  font-family: 'Widock';
+  font-size: 24px;
+  padding: 15px 50px;
+  border-radius: 100px;
+  justify-self: end; /* кнопка справа в своей колонке */
+}
+
+.ticket__btn:hover {
+  background-color: #E84810;
+}
+
+.ticket__date {
+  text-align: right;
+  font-family: 'Widock';
+  padding-right: 50px;
+}
+
+.ticket__day {
+  display: block;
+  font-size: 120px;
+}
+
+.ticket__month {
+  display: block;
+  font-size: 100px;
+}
+
+.ticket__time {
+  display: block;
+  font-size: 50px;
+}
+
+.link {
+  display: grid;
+  justify-content: end; /* выравнивание по правому краю */
+  margin-top: -30px; /* как в твоем примере */
+}
+
+.catalog-link {
+  display: grid;
+  grid-auto-flow: column; /* элементы в одну строку */
+  align-items: center; /* вертикальное выравнивание иконки и текста */
+  gap: 10px;
+  font-family: 'PsyType';
+  font-size: 40px;
+  color: #ED6D2C;
+  text-decoration: none;
+}
+
+.catalog-link:hover {
+  color: #E84810;
+  text-decoration: underline;
+}
+
+.catalog-link__icon {
+  width: 50px;
+  height: 50px;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 30px;
+  padding: 60px 80px 30px;
+  background-color: #1C1B17;
+}
+
+.footer__title h2 {
+  font-family: 'Widock';
+  font-size: 40px;
+  color: #fff;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.footer__contacts {
+  display: grid;
+  gap: 15px;
+}
+
+.footer__contact {
+  display: grid;
+  grid-template-columns: 60px auto;
+  align-items: center;
+  gap: 15px;
+  font-family: 'PsyType';
+  font-size: 36px;
+  color: #fff;
+}
+
+.footer__icon {
+  width: 60px;
+  height: 60px;
+}
+
+.footer__bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: 'PsyType';
+  font-size: 28px;
+  color: #A99F9F;
+}

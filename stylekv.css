@@ -84,7 +84,6 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%; /* тянет фон ровно по ширине и высоте */
   background-position: center;
-  border-radius: 30px;
   color: #fff;
 
   display: grid;
@@ -233,4 +232,5 @@ body {
   font-family: 'PsyType';
   font-size: 28px;
   color: #A99F9F;
+
 }

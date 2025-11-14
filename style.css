@@ -33,7 +33,6 @@ body {
 
 .header {
   padding: 20px 0;
-  position: relative;
   z-index: 2;
 }
 
@@ -83,7 +82,6 @@ h2 {
   align-items: center;
   text-align: center;
   color: #ED6D2C;
-  position: relative;
   margin-top: -80px;
 }
 
@@ -98,7 +96,6 @@ h2 {
   font-size: 175px;
   margin-bottom: 0;
   display: inline-block;
-  position: relative;
   text-align: left;
 }
 
@@ -224,6 +221,7 @@ h2 {
   display: flex;
   justify-content: flex-end;
   margin-top: -30px;
+  margin-right: 200px;
 }
 .catalog-link {
   display: inline-flex;

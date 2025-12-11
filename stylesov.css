@@ -72,6 +72,18 @@ body {
   margin: 0;
 }
 
+.instr-title nav {
+  margin-top: 40px;
+  margin-left: -40px;
+  margin-right: -40px;
+}
+
+.instr-title nav .nav-link {
+  font-size: 40px;
+
+}
+
+
 .instrument-section {
   padding-top: 40px;
   padding-bottom: 80px;

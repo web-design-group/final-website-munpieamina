@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Квартирники — MusicWay</title>
+  <link rel="stylesheet" href="styles/stylekv.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header__grid">
+    <div class="logo">MusicWay</div>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="#">Курсы</a>
+      <a href="sovet.html">Советы</a>
+      <a href="kvart.html" class="active">Квартирники</a>
+    </nav>
+  </div>
+</header>
+
+<main class="kvart-main">
+  <section class="kvart-title">
+    <h1>ХОЧЕШЬ ПОКАЗАТЬ СВОИ НАВЫКИ ПУБЛИКЕ?</h1>
+    <p>ПРИХОДИ НА КВАРТИРНИКИ!</p>
+  </section>
+
+  <section class="tickets">
+    <div class="ticket">
+      <div class="ticket__info">
+        <h2>ACOUSTIC</h2>
+        <p>Акустический вечер без лишней техники, только музыка, свет и чувства. Идеально для тех, кто хочет сыграть каверы или собственные песни в уютной атмосфере.</p>
+        <div class="ticket__place-wrapper">
+            <img src="img/map_icon.png" alt="Иконка карты" class="ticket__map-icon">
+            <div class="ticket__place-text">
+                <span>“Квартира №162”</span>
+                <span>Лиговский просп., 123</span>
+            </div>
+            <button class="ticket__btn">Я приду!</button>
+        </div>
+      </div>
+      <div class="ticket__date">
+        <span class="ticket__day">12</span>
+        <span class="ticket__month">09</span>
+        <span class="ticket__time">18:00</span>
+      </div>
+    </div>
+
+    <div class="ticket">
+      <div class="ticket__info">
+        <h2>GARAGE ROCK</h2>
+        <p>Домашний рок-концерт в духе старых гаражных репетиций. Без пафоса - только живой звук, искренность и драйв. Приходи играть, слушать и чувствовать.</p>
+        <div class="ticket__place-wrapper">
+            <img src="img/map_icon.png" alt="Иконка карты" class="ticket__map-icon">
+            <div class="ticket__place-text">
+                <span>“Квартира №162”</span>
+                <span>Парашютная ул., 61, корпус 4</span>
+            </div>
+            <button class="ticket__btn">Я приду!</button>
+        </div>
+      </div>
+      <div class="ticket__date">
+        <span class="ticket__day">17</span>
+        <span class="ticket__month">09</span>
+        <span class="ticket__time">19:30</span>
+      </div>
+    </div>
+
+    <div class="ticket">
+      <div class="ticket__info">
+        <h2>LATE NIGHT JAM</h2>
+        <p>Ночные джемы и импровизации для тех, кто живёт музыкой. Никаких сценариев - только настроение, ритм и свобода творчества и звука.</p>
+        <div class="ticket__place-wrapper">
+            <img src="img/map_icon.png" alt="Иконка карты" class="ticket__map-icon">
+            <div class="ticket__place-text">
+                <span>“Квартирникик у Гороховского”</span>
+                <span>Бабушкина ул., 29, корп. 2, кв. 45</span>
+            </div>
+            <button class="ticket__btn">Я приду!</button>
+        </div>
+      </div>
+      <div class="ticket__date">
+        <span class="ticket__day">18</span>
+        <span class="ticket__month">09</span>
+        <span class="ticket__time">22:00</span>
+      </div>
+    </div>
+    <div class="link">
+        <a href="#top" class="catalog-link">
+        Вернуться в начало страницы
+        <img src="img/arrow_to.png" alt=">" class="catalog-link__icon">
+        </a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__grid">
+    <div class="footer__title">
+      <h2>Возникли вопросы?</h2>
+      <h2>Пишите нам!</h2>
+    </div>
+
+    <div class="footer__contacts">
+      <div class="footer__contact">
+        <img src="img/mail_icon.png" alt="Почта" class="footer__icon">
+        <p>musicway22@gmail.com</p>
+      </div>
+      <div class="footer__contact">
+        <img src="img/phone_icon.png" alt="Телефон" class="footer__icon">
+        <p>8 (924) 890-90-14</p>
+      </div>
+      <div class="footer__contact">
+        <img src="img/telega_icon.png" alt="Telegram" class="footer__icon">
+        <p>@musicwayhelp</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; MusicWay, 2025</span>
+      <span>ИНН: 2348953214</span>
+      <span>ОГРН: 4420762504385</span>
+    </div>
+  </div>
+</footer>
+<script>
+  document.querySelector('.catalog-link').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+</body>
+</html>
